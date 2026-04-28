@@ -43,10 +43,14 @@ Hugging Face Space: https://huggingface.co/spaces/Vidhita/confidence-answer-veri
 pip install -r requirements.txt
 python app.py
 
-Screenshot
+## Results
+Here is a sample output screenshot:
 
-#Future Work
-Retrieval-augmented verification
-Better calibration
-Domain-specific verification
-Multilingual support
+![Auto Verifier](assets/Auto Verifier.png)
+
+## Future Work
+- Implement retrieval-augmented verification
+- Improve calibration techniques
+- Explore domain-specific verification
+- Add multilingual support
+
