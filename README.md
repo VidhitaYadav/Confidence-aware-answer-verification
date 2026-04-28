@@ -42,7 +42,7 @@ Hugging Face Space: https://huggingface.co/spaces/Vidhita/confidence-answer-veri
 ```bash
 pip install -r requirements.txt
 python app.py
-
+```
 ## Results
 Here is a sample output screenshot:
 
