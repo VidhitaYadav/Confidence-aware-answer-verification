@@ -47,9 +47,13 @@ python app.py
 Here is a sample output screenshot:
 
 ![Auto Verifier](assets/Auto%20Verifier.png)
+
 ![Manual Verifier](assets/Manual%20Verifier.png)
+
 ![AI Hallucination Detector](assets/AI%20Hallucination%20Detector.png)
+
 ![Quora Style Answer Ranking](assets/Quora%20Style%20Answer%20Ranking.png)
+
 
 
 ## Future Work
