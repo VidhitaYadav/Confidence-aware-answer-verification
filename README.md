@@ -43,18 +43,6 @@ Hugging Face Space: https://huggingface.co/spaces/Vidhita/confidence-answer-veri
 pip install -r requirements.txt
 python app.py
 ```
-## Results
-Here is a sample output screenshot:
-
-![Auto Verifier](assets/Auto%20Verifier.png)
-
-![Manual Verifier](assets/Manual%20Verifier.png)
-
-![AI Hallucination Detector](assets/AI%20Hallucination%20Detector.png)
-
-![Quora Style Answer Ranking](assets/Quora%20Style%20Answer%20Ranking.png)
-
-
 
 ## Future Work
 - Implement retrieval-augmented verification
