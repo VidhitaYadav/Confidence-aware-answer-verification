@@ -10,92 +10,43 @@ Unlike traditional models, this system not only predicts correctness but also:
 - Offers **explainability**
 - Analyzes **model reliability and errors**
 
-##  Key Features
+# Confidence-Aware Answer Verification System
 
-- 🔹 Transformer-based answer verification (RoBERTa)
-- 🔹 Custom neural architecture for confidence prediction
-- 🔹 Confidence calibration using temperature scaling
-- 🔹 Explainable AI (token-level importance)
-- 🔹 Error analysis and reliability evaluation
-- 🔹 Interactive Gradio UI
-- 🔹 Visualization of model performance
+A lightweight NLP system that verifies whether AI-generated or user-provided answers are supported by a given context. The project detects hallucinations, assigns confidence scores, and ranks multiple answers by reliability.
 
-##  Problem Statement
+## Live Demo
+Hugging Face Space: https://huggingface.co/spaces/Vidhita/confidence-answer-verifier
 
-Given:
-- A **Question**
-- A **Context**
-- A **Proposed Answer**
+## Features
+- Auto answer generation + verification
+- Manual answer verification
+- AI hallucination detection
+- Quora-style multi-answer ranking
+- Confidence score visualization
 
-The system predicts:
-- Whether the answer is **correct or incorrect**
-- A **confidence score**
-- A **reliability label**
+## Tech Stack
+- Python
+- PyTorch
+- Hugging Face Transformers
+- Gradio
+- Matplotlib
 
+## How It Works
+1. User enters a question and context
+2. System generates or accepts an answer
+3. Verifier checks semantic and lexical support
+4. Final confidence score is computed
+5. Answer is labeled as supported or likely hallucinated
 
-## System Architecture
+## Run Locally
+```bash
+pip install -r requirements.txt
+python app.py
 
-Input (Q, Context, Answer)
-↓
-Tokenizer (RoBERTa)
-↓
-Transformer Encoder
-↓
-Custom Neural Layers
-↓
-Confidence Score (Sigmoid)
-↓
-Calibration Layer (Temperature Scaling)
-↓
-Explainability Module
-↓
-Evaluation + Visualization
-↓
-Gradio UI
+Screenshot
 
-##  Model Details
-
-- Base Model: `roberta-base`
-- Framework: PyTorch
-- Loss Function: Binary Cross Entropy
-- Optimizer: Adam
-- Training Data: Subset of SQuAD dataset
-- 
-##  Evaluation Metrics
-
-The model is evaluated using:
-
-- Accuracy
-- F1-score
-- Confusion Matrix
-- Classification Report
-
-###  Reliability Analysis
-
-- Confidence vs Accuracy plot
-- Confidence score distribution
-- High-confidence error analysis
-
-###  Calibration
-
-- Temperature scaling applied
-- Improved confidence reliability
-
-##  Visualizations
-
-- Confusion Matrix
-- Confidence vs Accuracy graph
-- Confidence distribution histogram
-- High-confidence error cases
-
-##  Demo (Gradio UI)
-
-The system includes an interactive interface where users can:
-
-- Input question, context, and answer
-- Get:
-  - Confidence score
-  - Reliability label
-  - Explanation
-  - Visualization
-
+#Future Work
+Retrieval-augmented verification
+Better calibration
+Domain-specific verification
+Multilingual support
